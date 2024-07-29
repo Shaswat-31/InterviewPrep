@@ -41,10 +41,11 @@ function AddNewInterview() {
       jobDesc +
       ", years of experience: " +
       jobExperience +
-      ", Depends on Job role, Job description and years of experience give us 5 interview question along with answer in json format, Give us question and answer field on JSON";
+      ", Depends on Job role, Job description and years of experience give us 5 interview question along with answer in json format, Give us question and answer field on JSON, NOTE: ONLY RETURN THE JSON DATA AS A RESPONSE";
 
     try {
       const result = await chatSession.sendMessage(InputPrompt);
+      console.log(result);
       const MockJsonResp = (await result.response.text())
         .replace("```json", "")
         .replace("```", "");
@@ -77,7 +78,7 @@ function AddNewInterview() {
     } catch (error) {
       console.error("Error during chat session or database operation:", error);
     }
-
+    
     setLoading(false);
   };
 

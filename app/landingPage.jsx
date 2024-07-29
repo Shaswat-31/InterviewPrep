@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { Button } from 'shadcdn/react'; // Assuming you have Shad CDN imported
+import { Button } from '@/components/ui/button';
+ // Assuming you have Shad CDN imported
 
 const LandingPage = () => {
   const router = useRouter();

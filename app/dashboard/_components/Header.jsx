@@ -17,24 +17,24 @@ function Header() {
       <Image src={'/logo.svg'} width={40} height={20} alt='Logo' />
       <ul className='hidden md:flex gap-6'>
         <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
-            path === '/dashboard' && 'text-primary font-bold'
+          className={`hover:text-blue-400 hover:font-bold transition-all cursor-pointer ${
+            path === '/dashboard' && 'text-blue-400 font-bold'
           }`}
           onClick={() => handleNavigation('/dashboard')}
         >
           Dashboard
         </li>
         <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
-            path === '/dashboard/questions' && 'text-primary font-bold'
+          className={`hover:text-blue-400 hover:font-bold transition-all cursor-pointer ${
+            path === '/dashboard/questions' && 'text-blue-400 font-bold'
           }`}
           onClick={() => handleNavigation('/dashboard/questions')}
         >
           Ask-Anything
         </li>
         <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
-            path === '/dashboard/previousInterview' && 'text-primary font-bold'
+          className={`hover:text-blue-400 hover:font-bold transition-all cursor-pointer ${
+            path === '/dashboard/previousInterview' && 'text-blue-400 font-bold'
           }`}
           onClick={() => handleNavigation('/dashboard/previousInterview')}
         >

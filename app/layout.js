@@ -3,7 +3,6 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
 import Header from "./dashboard/_components/Header";
-import Footer from "./dashboard/_components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
         <Header />
         <Toaster/>
         {children}
-        <Footer/>
         </body>
     </html>
     </ClerkProvider>
